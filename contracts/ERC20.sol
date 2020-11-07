@@ -56,8 +56,8 @@ contract ERC20{
     }
         
     function transferFrom(address _from, address _to, uint256 _value) public payable returns (bool success) {
-          require (_value>0);
-         require(_value <= allowance[_from][msg.sender]);  //checking that whether sender is approved or not...
+          require (_value>0,"Value can not be empty");
+         require(_value <= allowance[_from][msg.sender],"Not allowed this much of token");  //checking that whether sender is approved or not...
          balances[_from]= balances[_from].sub(_value);
          balances[_to] = balances[_to].add(_value);
          allowance[_from][msg.sender]=allowance[_from][msg.sender].sub(_value);
@@ -65,15 +65,15 @@ contract ERC20{
                 return true;
     }
     
-    function changeowner(address _newaddress) public  returns(bool success){
-        require(msg.sender==ownerAddress);
+    function changeowner(address _newaddress) public onlyOwner  returns(bool success)  {
+       
         balances[_newaddress]=balances[ownerAddress];
         balances[ownerAddress]=0;
         ownerAddress=_newaddress;
         return true;
     }
     
-    function IncreaseSupply(uint256 _newSupply) public payable onlyOwner {
+    function IncreaseSupply(uint256 _newSupply) public payable  onlyOwner {
         balances[ownerAddress]=balances[ownerAddress].add(_newSupply);  
         totalSupply+=_newSupply;
     }
