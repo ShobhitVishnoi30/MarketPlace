@@ -1,7 +1,7 @@
 var TX = require("ethereumjs-tx").Transaction;
 const Web3 = require('web3');
 //web3 = new Web3(new Web3.providers.HttpProvider("https://rpc-mumbai.matic.today"));
-web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v3/afd7831a73cc4b769719d163b6a919ef"));
+web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v3/..........."));
 var ERCAbi =[
 	{
 		"inputs": [
@@ -592,8 +592,8 @@ var market = new web3.eth.Contract(marketAbi,marketContractAddress);
 var bidding = new web3.eth.Contract(biddingAbi,biddingContractAddress);
 const account1="0x7f473eE979DC5D5c1fBB871fbd167EfC5eabD903";
 const account2="0xd4aD32c5c480cE33923eA8C1Ed14fA5a6f0c58F4";
-const privateKey1 = new Buffer.from("4bf156305ce7d0f742af802935a026048aea9b250a42aaa3a5f528d9aa29c108","hex");
-const privateKey2=new Buffer.from("d6e4f876f5fd9715ee8d0132eda66715293b41afc9ca093a8e9c12d495aaf59f","hex");
+const privateKey1 = new Buffer.from("","hex");
+const privateKey2=new Buffer.from("","hex");
 async function runCode(data , account , privateKey,  deployedAddress){
         
   var count = await web3.eth.getTransactionCount(account); 
