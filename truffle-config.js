@@ -23,6 +23,7 @@ require('dotenv').config();
 const fs = require('fs');
 const mnemonic = "picture brief exile easy knee father settle myself ignore will pride push"
 
+
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
