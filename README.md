@@ -7,6 +7,10 @@ When a farmer put his crop on the portal , we create a NFT token in the bidding 
 
 contracts are deployed on rinkeby test network.
 
-ERC20 tokens :
-Bidding contract:
-Market contract:
+
+
+
+
+ERC20 tokens :"0x9D68ABa38c04774002B4aF104a139bE761d1E61e"
+Bidding contract:"0x33c16292d07E23FF05f28586824A8CAE7E74f6B6"
+Market contract:"0xAa70b943dE5Df0b2983c795fE3414F4adFC94D64"
