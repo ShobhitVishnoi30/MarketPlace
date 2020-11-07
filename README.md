@@ -14,3 +14,11 @@ contracts are deployed on rinkeby test network.
 ERC20 tokens :"0x9D68ABa38c04774002B4aF104a139bE761d1E61e"
 Bidding contract:"0x33c16292d07E23FF05f28586824A8CAE7E74f6B6"
 Market contract:"0xAa70b943dE5Df0b2983c795fE3414F4adFC94D64"
+
+
+
+Also on the matic Mumbai Testnet : 
+
+ERC20 tokens :"0xAF88da22af6Bd342d18fd4542F38B4c2Ad78FDF5"
+Bidding contract:"0x7a4A6D478DfebE0B5b65da07d4f2696DE680258C"
+Market contract:"0x47Cd6ac8758bE32F034aE061fe3C90cc316E0a12"
